@@ -36,20 +36,10 @@ if len(copied_files) != 0:
         description="LLM-based Cryptographic API Misuse Detection",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-
-    # model_name = 'Pro/zai-org/GLM-5.1'
-    # # model_name = 'Pro/moonshotai/Kimi-K2.6'
-    # API_Key = 'sk-cvjjwtyuumoakjnidraimcdlxnmcrxifzpdnshjgtqofefgs'
-    # API_Url = 'https://api.siliconflow.cn/v1/chat/completions'
-
-    # model_name = 'deepseek-chat'  # RQ3 Ablation on Model Backbones
-    # API_Key = 'sk-6c69cd8f3bb24317ab6b68c0d9bf7e6b'
-    # API_Url = 'https://api.deepseek.com/v1/chat/completions'
-
+    
     model_name = 'qwen3-next-80b-a3b-instruct'
-    # model_name = 'qwen3-30b-a3b-instruct-2507'
-    # model_name = 'qwen3-coder-30b-a3b-instruct'
-    API_Key = 'sk-bb641b50f491432cbc41e90bf1b1a4b4'
+    model_name = 'qwen3-coder-next'
+    API_Key = 'sk-bbxxxx'  # Replace with your own API Key
     API_Url = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
     cot = True
     # cot = False
