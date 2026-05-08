@@ -2,8 +2,6 @@
 
 **Taming Long Code for LLMs via Cryptography-Aware Program Slicing for Precise Cryptographic API Misuse Detection**
 
-> 📄 This repository contains the implementation and evaluation data for our paper submitted to NDSS 2026.
-
 ------
 
 ## Overview
