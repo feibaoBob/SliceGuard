@@ -192,8 +192,6 @@ def analyze_with_llm(prompt: list, model_name: str, API_Key: str, API_Url: str, 
             response.raise_for_status()
             result = response.json()
 
-            # print("模型响应：", result)
-
             # 提取模型生成的文本内容
             content_str = result['choices'][0]['message'].get('content', '')
 
@@ -382,26 +380,10 @@ if __name__ == "__main__":
     # folder_path = './small_test'
     # folder_path = './small_test2'
 
-    # model_name = 'Pro/zai-org/GLM-5'
-    model_name = 'Pro/zai-org/GLM-5.1'
-    # model_name = 'Pro/moonshotai/Kimi-K2.6'
-    # model_name = 'deepseek-ai/DeepSeek-V4-Flash'
-    # model_name = 'Qwen/Qwen3.5-35B-A3B'
-    # model_name = 'Qwen/Qwen3.5-27B'
-    # model_name = 'Qwen/Qwen3-Coder-30B-A3B-Instruct'
-
-    API_Key = 'sk-cvjjwtyuumoakjnidraimcdlxnmcrxifzpdnshjgtqofefgs'
-    API_Url = 'https://api.siliconflow.cn/v1/chat/completions'
-
-    # # model_name = 'qwen3-next:80b-cloud'
-    # model_name = 'qwen3-coder-next:cloud'
-    # API_Key = os.environ.get('OLLAMA_API_KEY')
-    # API_Url = "http://localhost:11434/v1/chat/completions"
-
-    # model_name = 'qwen3-next-80b-a3b-instruct'
-    # # model_name = 'qwen3-coder-next'
-    # API_Key = 'sk-bb641b50f491432cbc41e90bf1b1a4b4'
-    # API_Url = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
+    model_name = 'qwen3-next-80b-a3b-instruct'
+    # model_name = 'qwen3-coder-next'
+    API_Key = 'sk-bbxxxx'  # Replace with your own API Key
+    API_Url = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
 
     # cot = False
     cot = True
@@ -465,24 +447,10 @@ if __name__ == "__main__":
         print(f"Error occurred while processing the csv file: {e}")
 
     # model_name = 'qwen3-next-80b-a3b-instruct'
-    # # model_name = 'qwen3-30b-a3b-instruct-2507'
-    # # model_name = 'qwen3-coder-30b-a3b-instruct'
-    # API_Key = 'sk-bb641b50f491432cbc41e90bf1b1a4b4'
+    # API_Key = 'sk-bbxxxx' # Replace with your own API Key
     # API_Url = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
-
-    # # model_name = 'Pro/zai-org/GLM-5'
-    # model_name = 'Qwen/Qwen3.5-35B-A3B'
     #
-    # API_Key = 'sk-cvjjwtyuumoakjnidraimcdlxnmcrxifzpdnshjgtqofefgs'
-    # API_Url = 'https://api.siliconflow.cn/v1/chat/completions'
-    #
-    # file_path = './PyCryptoBench-LLM-simple/trap_type1\Trap_Import_md5_rule_11_trapfile_9.py'
-    # # file_path = './PyCryptoBench-LLM-simple/trap_type2\Trap_rule_16_Interprocedural_1.py'
-    # # file_path = './PyCryptoBench-LLM-simple/trap_type2\Trap_rule_16_Path-Sensitive_0.py'
-    # # file_path = './PyCryptoBench-LLM-simple/trap_type2\Trap_rule_16_Global_0.py'
-    #
-    # # file_path = './motivating_study_v3/bucket1_50/rule_06_insecure_0_B.py'
-    #
+    # file_path = './PyCryptoBench-LLM/trap_type1/Trap_Import_md5_rule_11_trapfile_9.py'
     # code_content = read_code_file(str(file_path))
     # code_type = 'py'
     # cot = True
